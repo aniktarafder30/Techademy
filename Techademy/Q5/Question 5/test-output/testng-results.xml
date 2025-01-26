@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-27T03:19:03 IST" name="Suite" finished-at="2025-01-27T03:19:22 IST" duration-ms="19208">
+    <groups>
+    </groups>
+    <test started-at="2025-01-27T03:19:03 IST" name="Test" finished-at="2025-01-27T03:19:22 IST" duration-ms="19208">
+      <class name="com.sdet.anik.question5.AutomateFlightBookTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sdet.anik.question5.AutomateFlightBookTest@7d7758be]" started-at="2025-01-27T03:19:03 IST" name="setUp" finished-at="2025-01-27T03:19:06 IST" duration-ms="3150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="flightSearchAutomation()[pri:0, instance:com.sdet.anik.question5.AutomateFlightBookTest@7d7758be]" started-at="2025-01-27T03:19:06 IST" name="flightSearchAutomation" finished-at="2025-01-27T03:19:21 IST" duration-ms="15083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchAutomation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sdet.anik.question5.AutomateFlightBookTest@7d7758be]" started-at="2025-01-27T03:19:21 IST" name="tearDown" finished-at="2025-01-27T03:19:22 IST" duration-ms="921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sdet.anik.question5.AutomateFlightBookTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

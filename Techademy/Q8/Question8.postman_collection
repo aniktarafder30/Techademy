@@ -1,0 +1,838 @@
+{
+	"info": {
+		"_postman_id": "99bbe331-e891-4855-9bb5-cf8c82a452d9",
+		"name": "Techademy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41556111"
+	},
+	"item": [
+		{
+			"name": "positive get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "positive get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:40:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=%2BbNPlmjJNT%2BovNCuZnR2AidgbT620NH0MRv7MjpCdw%2BdCce%2FWAqTxSxjE%2FqSJtRXKclUX%2FsHwSC6ZN9RkaEG9h4dtPYIGQHb04aZ382baKjsy8h5BTy%2BRGD%2F3awQynhz3Tfxyp6j\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9082a2014b0c0e3e-MXP"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=139942&min_rtt=139595&rtt_var=29676&sent=25&recv=24&lost=0&retrans=0&sent_bytes=4379&recv_bytes=1246&delivery_rate=41714&cwnd=36&unsent_bytes=0&cid=49dff5ae7dc9a806&ts=19277&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"5\",\n    \"name\": \"Samsung Galaxy Z Fold2\",\n    \"data\": {\n        \"price\": 689.99,\n        \"color\": \"Brown\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "negative get",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/90",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"90"
+					]
+				},
+				"description": "404 id not found"
+			},
+			"response": [
+				{
+					"name": "negative get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/90",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"90"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:31:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=el%2FmckiLTWnmGQMUObvuGiBH%2BLZwRUK7z0sXf1EwjAPMrmsQN04BUKCwwMvCK0hcPMOfwjIRMtNhTNg7%2FrdDFfLuvBCjax9jSKsnDmRQgEFfJwzTd%2BDJXk7%2F0Yw0yoVUNrEvNf%2BP\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "908295125bf05243-MXP"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=134986&min_rtt=128707&rtt_var=31494&sent=56&recv=53&lost=0&retrans=0&sent_bytes=5783&recv_bytes=1291&delivery_rate=45318&cwnd=37&unsent_bytes=0&cid=19583af18051ed48&ts=50883&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Oject with id=90 was not found.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "positive post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Apple iPhone 17\",\r\n    \"data\": {\r\n        \"price\": 799.00,\r\n        \"color\": \"Black\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "positive post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Apple iPhone 17\",\r\n    \"data\": {\r\n        \"price\": 799.00,\r\n        \"color\": \"Black\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.restful-api.dev/objects",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:39:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=0Tju5nZHuEJHhplMZJ0znvXiLQMDyv9UatwVVPtyjKi644O3NqMA%2Fqp%2FUDBhT0JiQ49vAGY7Bw6tmKFJlzYp%2FnqnySU%2BFP3mR7zJQpOMcH2MqmiUsIAU9WWU2KAcjbzC6QnmMlE2\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "90829f979ee5ee84-MXP"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=129971&min_rtt=129442&rtt_var=11768&sent=89&recv=85&lost=0&retrans=0&sent_bytes=8814&recv_bytes=2755&delivery_rate=22552&cwnd=83&unsent_bytes=0&cid=df4d808e0dfa3509&ts=83831&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"ff808181932badb60194a3e8fb027bdd\",\n    \"name\": \"Apple iPhone 17\",\n    \"createdAt\": \"2025-01-26T18:39:02.402+00:00\",\n    \"data\": {\n        \"price\": 799,\n        \"color\": \"Black\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "positive put",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"demo xyz\",\r\n    \"data\": {\r\n        \"price\": 1009.99,\r\n        \"color\": \"demo col\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181932badb60194a3e8fb027bdd",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181932badb60194a3e8fb027bdd"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "positive put",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"demo xyz\",\r\n    \"data\": {\r\n        \"price\": 1009.99,\r\n        \"color\": \"demo col\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/ff808181932badb60194a3e8fb027bdd",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"ff808181932badb60194a3e8fb027bdd"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:46:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=17mOuprlky6RwEq4C8bL2iKsMGgGdmOzraj%2FJJkTKfH4hTtPxqr0BJbyYThbxTYGdlVlWQ180%2F6DkMC7Xc29o45xfLwvnyXahK8Nh%2FPG2glbJ5hSVj%2FqHIqyHVXEi4md0ABfct1n\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9082a9cfff6083b5-MXP"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=126690&min_rtt=126662&rtt_var=35649&sent=43&recv=42&lost=0&retrans=0&sent_bytes=4318&recv_bytes=1437&delivery_rate=34558&cwnd=35&unsent_bytes=0&cid=7bffb7c9966061e1&ts=40988&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"ff808181932badb60194a3e8fb027bdd\",\n    \"name\": \"demo xyz\",\n    \"updatedAt\": \"2025-01-26T18:46:01.030+00:00\",\n    \"data\": {\n        \"price\": 1009.99,\n        \"color\": \"demo col\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "negative put",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Samsung Galaxy Z Fold2\",\r\n    \"data\": {\r\n        \"price\": 1000.99,\r\n        \"color\": \"Brown\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"5"
+					]
+				},
+				"description": "405 method not allowed as 5 is reserved id"
+			},
+			"response": [
+				{
+					"name": "negative put",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Samsung Galaxy Z Fold2\",\r\n    \"data\": {\r\n        \"price\": 1000.99,\r\n        \"color\": \"Brown\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"5"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:38:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=eyerPNUPdszyCtVJaEqy%2BvOvkctde%2Ft4V3mZ%2BYJeltQiF1zlKArMNjD684CEkkYbB5g9EOfcUBeSK7jgkxJUYwCqTBWMjaGOokf4pDqt9tIUGvNCAFn3dCPw%2B655%2F2qbvVIyKkbY\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "90829ec1baf1ee84-MXP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=130062&min_rtt=129484&rtt_var=27625&sent=52&recv=51&lost=0&retrans=0&sent_bytes=5414&recv_bytes=1500&delivery_rate=22545&cwnd=81&unsent_bytes=0&cid=df4d808e0dfa3509&ts=49605&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"5 is a reserved id and the data object of it cannot be overridden. You can create a new object via POST request and use new generated by id from it to send a PUT request.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "negative delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"7"
+					]
+				},
+				"description": "405 not allowed as 7 is reserved id"
+			},
+			"response": [
+				{
+					"name": "negative delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/7",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"7"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:38:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Lbv1nDoeLNxWXU%2B0zt9oUWek3g%2B1%2BVJ%2B8RvE0t%2BQvWSCvn5PZOCxjL4rvjuls3OOl08hN8Lf%2FOSp%2Fvz%2Bix7WcIPKd5tga1uqFT%2BvAU5VMsRa%2Bb7OZoOqJwgl6UwerBsPhrzl3kD6\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "90829e8cfbeaee84-MXP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=130083&min_rtt=129484&rtt_var=36778&sent=42&recv=42&lost=0&retrans=0&sent_bytes=4274&recv_bytes=1092&delivery_rate=22545&cwnd=79&unsent_bytes=0&cid=df4d808e0dfa3509&ts=41163&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"7 is a reserved id and the data object of it cannot be deleted. You can create your own new object via POST request and try to send a DELETE request with new generated object id.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "positive delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181932badb60194a3e4166b7bd8",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181932badb60194a3e4166b7bd8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "positive delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/ff808181932badb60194a3e4166b7bd8",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"ff808181932badb60194a3e4166b7bd8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:37:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=kOQlRlwIHUiSwbx4ixIICwCFwSrEDU5T0F1vWIrKh%2FAZcSiOSFagM84u%2BOKy4PmmLr%2BIj9C2O6J9wFGAS%2BHFuCcKff9xq3s7FbQK67DQMQK7HeB9eRMII73I%2B%2FfZ1XypuhAXQILX\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "90829d8de9f1ee84-MXP"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=130164&min_rtt=130159&rtt_var=48820&sent=4&recv=5&lost=0&retrans=0&sent_bytes=2821&recv_bytes=852&delivery_rate=22426&cwnd=77&unsent_bytes=0&cid=df4d808e0dfa3509&ts=361&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Object with id = ff808181932badb60194a3e4166b7bd8 has been deleted.\"\n}"
+				}
+			]
+		}
+	]
+}
