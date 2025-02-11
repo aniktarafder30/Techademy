@@ -1,4 +1,0 @@
-mvn clean install : To build the project 
-
-java -jar target/artifact-id-0.0.1-SNAPSHOT.jar: To run the packaged JAR
-Replace artifact-id-0.0.1-SNAPSHOT.jar with the name of the JAR file created in the target directory

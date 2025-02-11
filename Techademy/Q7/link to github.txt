@@ -1,9 +1,0 @@
-steps-
-1. git init(local gitinitialized)
-2. git remote add origin <url>( remote git linked)
-3. git checkout -b <branch-name> (create a new branch and switch to the new branch)
-4. git add(track all untracked file and stage for commit)
-5. git commit -m "message" (commit to git)
-6. git push origin <branch> (push to origin)
-
-link to repo- https://github.com/aniktarafder30/Techademy/tree/aniktarafder
